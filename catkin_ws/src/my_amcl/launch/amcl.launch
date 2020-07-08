@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Launch other relevant files-->
+  <include file="$(find my_robot)/launch/world.launch"/>
+  <!--include file="$(find ball_chaser)/launch/ball_chaser.launch"/-->
+
+  <!-- Map server-->
+  <arg name="map_file" default="$(find my_amcl)/maps/DaekyungKim.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <!-- AMCL Node -->
+  <node name="amcl" pkg="amcl" type="amcl" output="screen">
+    <!--remap from="scan" to="my_robot/laser/scan"/-->
+    <param name="odom_frame_id" value="odom"/>
+    <param name="odom_model_type" value="diff-corrected"/>
+    <param name="base_frame_id" value="robot_footprint"/>
+    <param name="global_frame_id" value="map"/>
+    <param name="initial_pose_x" value="1.937"/>
+    <param name="initial_pose_y" value="-0.016"/>
+    <param name="initial_pose_a" value="-1.57"/>
+    <param name="max_particles" value="3000"/>
+    <param name="odom_alpha1" value="0.05"/>
+    <param name="odom_alpha2" value="0.05"/>
+    <param name="odom_alpha3" value="0.05"/>
+    <param name="odom_alpha4" value="0.05"/>
+    <param name="update_min_d" value="0.05"/>	<!--0.2-->
+    <param name="update_min_a" value="0.1"/>	<!--0.523-->
+    <param name="laser_max_range" value="-1"/> <!---1-->
+  </node>
+
+  <!-- Move Base -->
+  <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
+    <!--remap from="scan" to="my_robot/laser/scan"/-->
+    <param name="base_global_planner" value="navfn/NavfnROS" />
+    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
+    <rosparam file="$(find my_amcl)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find my_amcl)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find my_amcl)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find my_amcl)/config/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find my_amcl)/config/base_local_planner_params.yaml" command="load" />
+  </node>
+  <!--RVIZ-->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d /home/workspace/catkin_ws/src/my_amcl.rviz"/>
+</launch>
