@@ -6,4 +6,10 @@ In this program, a mobile robot inside a map in Gazebo localizes with ROS AMCL p
 You can move the mobile robot using Tele-Operation and Navigation Stack.
 
 ## Requirements
-* Gazebo any version later
+* Gazebo any version later than v7.0.0
+* ROS Kinetic : Link <http://wiki.ros.org/ROS/Installation>
+* C++11 Compiler (gcc/g++)
+* GNU make
+
+## Run
+* 
