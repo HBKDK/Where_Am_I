@@ -24,7 +24,7 @@ git clone https://github.com/ros-teleop/teleop_twist_keyboard</code></pre>
 <pre><code>cd ..
 $ catkin_make
 $ source devel/setup.bash
-$ roslaunch my_amcl amcl launch</pre></code>
+$ roslaunch my_amcl amcl.launch</pre></code>
 4. open other terminal
 <pre><code>rosrun teleop_twist_keyboard teleop_twist_keyboard.py</pre></code>
 5. Ok! Finish the ready for localization  
