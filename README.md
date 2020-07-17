@@ -1,6 +1,6 @@
 # Where_Am_I
-Udacity Robotics Software Engineer Course
-
+Udacity Robotics Software Engineer Course  
+![screen shot](https://github.com/HBKDK/Where_Am_I/blob/master/ScreenShot.jpg)
 ## Program Overview
 In this program, a mobile robot inside a map in Gazebo localizes with ROS AMCL package.
 You can move the mobile robot using Tele-Operation and Navigation Stack.
