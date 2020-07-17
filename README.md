@@ -13,15 +13,12 @@ You can move the mobile robot using Tele-Operation and Navigation Stack.
 
 ## Setup and Running
 1. Create Catkin Workspace  
-<pre><code>$ mkdir -p /home/workspace/catkin_ws/src
-$ cd /home/workspace/catkin_ws/src  
-$ catkin_init_workspace</code></pre>  
+<pre><code>$ mkdir -p /home/workspace  
+$ cd /home/workspace</code></pre>  
 2. github clone
-<pre><code>git clone https://github.com/HBKDK/Where_Am_I
-git clone -b indigo-devel --single-branch https://github.com/ros-planning/navigation
-git clone https://github.com/ros-teleop/teleop_twist_keyboard</code></pre>
+<pre><code>git clone https://github.com/HBKDK/Where_Am_I</code></pre>
 3. Build the package and source the setup script
-<pre><code>cd ..
+<pre><code>$ cd /home/workspace/Where_Am_I/catkin_ws
 $ catkin_make
 $ source devel/setup.bash
 $ roslaunch my_amcl amcl.launch</pre></code>
