@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robot_pose_ekf_generate_messages_eus"
-  "/home/workspace/catkin_ws/devel/share/roseus/ros/robot_pose_ekf/srv/GetStatus.l"
-  "/home/workspace/catkin_ws/devel/share/roseus/ros/robot_pose_ekf/manifest.l"
+  "/home/workspace/Where_Am_I/catkin_ws/devel/share/roseus/ros/robot_pose_ekf/srv/GetStatus.l"
+  "/home/workspace/Where_Am_I/catkin_ws/devel/share/roseus/ros/robot_pose_ekf/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

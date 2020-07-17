@@ -1,4 +1,4 @@
-prefix=/home/workspace/catkin_ws/install
+prefix=/home/workspace/Where_Am_I/catkin_ws/install
 
 Name: voxel_grid
 Description: Description of voxel_grid

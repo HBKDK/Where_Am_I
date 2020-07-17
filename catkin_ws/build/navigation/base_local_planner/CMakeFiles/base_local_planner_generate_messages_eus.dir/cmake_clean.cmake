@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/base_local_planner_generate_messages_eus"
-  "/home/workspace/catkin_ws/devel/share/roseus/ros/base_local_planner/msg/Position2DInt.l"
-  "/home/workspace/catkin_ws/devel/share/roseus/ros/base_local_planner/manifest.l"
+  "/home/workspace/Where_Am_I/catkin_ws/devel/share/roseus/ros/base_local_planner/msg/Position2DInt.l"
+  "/home/workspace/Where_Am_I/catkin_ws/devel/share/roseus/ros/base_local_planner/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

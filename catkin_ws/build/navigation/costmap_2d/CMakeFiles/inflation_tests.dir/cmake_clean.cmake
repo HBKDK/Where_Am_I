@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/inflation_tests.dir/test/inflation_tests.cpp.o"
-  "/home/workspace/catkin_ws/devel/lib/costmap_2d/inflation_tests.pdb"
-  "/home/workspace/catkin_ws/devel/lib/costmap_2d/inflation_tests"
+  "/home/workspace/Where_Am_I/catkin_ws/devel/lib/costmap_2d/inflation_tests.pdb"
+  "/home/workspace/Where_Am_I/catkin_ws/devel/lib/costmap_2d/inflation_tests"
 )
 
 # Per-language clean rules from dependency scanning.

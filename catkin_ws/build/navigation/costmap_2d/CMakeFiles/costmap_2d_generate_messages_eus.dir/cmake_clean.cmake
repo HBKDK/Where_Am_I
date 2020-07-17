@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/costmap_2d_generate_messages_eus"
-  "/home/workspace/catkin_ws/devel/share/roseus/ros/costmap_2d/msg/VoxelGrid.l"
-  "/home/workspace/catkin_ws/devel/share/roseus/ros/costmap_2d/manifest.l"
+  "/home/workspace/Where_Am_I/catkin_ws/devel/share/roseus/ros/costmap_2d/msg/VoxelGrid.l"
+  "/home/workspace/Where_Am_I/catkin_ws/devel/share/roseus/ros/costmap_2d/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.
